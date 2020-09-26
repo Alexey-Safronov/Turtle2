@@ -1,0 +1,84 @@
+import turtle as t
+def digit(A):
+	t.speed(3)
+	t.left(90)
+	if A[0] == 0: 
+		t.penup()
+	t.forward(50)
+	t.pendown()
+	if A[1] == 0: 
+		t.penup()
+	t.forward(50)
+	t.pendown()
+	if A[2] == 0: 
+		t.penup()
+	t.right(90)
+	t.forward(50)
+	t.pendown()
+	if A[3] == 0: 
+		t.penup()
+	t.right(90)
+	t.forward(50)
+	t.pendown()
+	if A[4] == 0: 
+		t.penup()
+	t.forward(50)
+	t.pendown()
+	if A[5] == 0: 
+		t.penup()
+	t.right(90)
+	t.forward(50)
+	t.pendown()
+	if A[6] == 0: 
+		t.penup()
+	t.right(135)
+	t.forward(50*2**0.5)
+	t.pendown()
+	if A[7] == 0: 
+		t.penup()
+	t.left(135)
+	t.forward(50)
+	t.pendown()
+	if A[8] == 0: 
+		t.penup()
+	t.right(135)
+	t.forward(50*2**0.5)
+	t.penup()
+	t.right(135)
+	t.forward(100)
+	t.left(90)
+	t.forward(50)
+	t.pendown()
+	
+	
+
+A0 = [1, 1, 1, 1, 1, 1, 0, 0, 0]
+A1 = [0, 0, 0, 1, 1, 0, 0, 0, 1]
+A2 = [0, 0, 1, 1, 0, 1, 1, 0, 0]
+A3 = [0, 0, 1, 0, 0, 0, 1, 1, 1]
+A4 = [0, 1, 0, 1, 1, 0, 0, 1, 0]	
+A5 = [0, 1, 1, 0, 1, 1, 0, 1, 0]
+A6 = [1, 1, 1, 0, 1, 1, 0, 1, 0]
+A7 = [1, 0, 1, 0, 0, 0, 0, 0, 1]
+A8 = [1, 1, 1, 1, 1, 1, 0, 1, 0]
+A9 = [0, 1, 1, 1, 0, 0, 1, 1, 0]
+D = [A0, A1, A2, A3, A4, A5, A6, A7, A8, A9]
+N = int(input())
+Z = input().split()
+for i in range(N):
+	digit(D[int(Z[i])])
+
+input()
+
+
+
+
+
+
+
+
+
+
+
+
+
